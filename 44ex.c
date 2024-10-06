@@ -126,6 +126,7 @@ setlocale(LC_ALL,"portuguese"); //Definição da linguagem
       printf("\t1- Nome do aluno:\n\n");
       printf("\t2- Digite o CPf:\n\n");
       printf("\t3- Deletar:\n\n");
+      printf("\t4- Sair do sistema\n\n");
       printf("Digite a opção desejada:"); //Finalização do menu
 
       scanf("%d", &opcao); //Armazenando as opções do usuário
@@ -146,6 +147,11 @@ setlocale(LC_ALL,"portuguese"); //Definição da linguagem
 			deletar();
 			break;
 			
+		case 4:
+		    printf("Obrigado por ulitilizar nossa ferramenta!\n");
+			return 0;
+			break;
+				
 		default:
 		    printf("Opção inexistente!");
 	        system("pause");  
